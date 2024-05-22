@@ -1,0 +1,36 @@
+.nav-bar {
+  background-color: rgb(139, 0, 0);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  font-size: 40px;
+  height: 120px;
+}
+
+.restaurant-name-heading {
+  font-family: "Italianno", cursive;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.nav-bar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 60px;
+  font-family: "Italianno", cursive;
+}
+
+.home-tab:hover,
+.menu-tab:hover,
+.about-tab:hover,
+.contact-tab:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

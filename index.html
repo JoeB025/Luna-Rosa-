@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="Style/Body.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Images.css" rel="stylesheet" type="text/css" />
+    <link href="Style/NavBar.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Header.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Main.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Menus/Lunch.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Menus/Main.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Menus/Dessert.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Menus/Drinks.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Menus/Wine.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Menus/Cocktails.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Events-Offers.css" rel="stylesheet" type="text/css" />
+    <link href="Style/History.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Footer.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Rosa</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1 class="restaurant-name-heading">Luna Rosa</h1>
+
+      <ul class="nav-bar-list">
+        <li class="home-tab">Home</li>
+        <li class="menu-tab">Menu</li>
+        <li class="about-tab">About</li>
+        <li class="contact-tab">Contact us</li>
+      </ul>
+    </nav>
+
+    <header class="header-section">
+      <h1 class="welcome-heading">Welcome to Luna Rosa</h1>
+      <p class="book-table-header">Book a table</p>
+    </header>
+
+    <div class="img-container-p1">
+      <img
+        src="https://imgur.com/K8Y4FeC.png"
+        class="header-pic"
+        title="pic1"
+        alt="pic1"
+      />
+      <img
+        src="https://imgur.com/3Qy8TQT.png"
+        class="header-pic"
+        title="pic1"
+        alt="pic1"
+      />
+      <img
+        src="https://imgur.com/lj5mSgM.png"
+        class="header-pic"
+        title="pic1"
+        alt="pic1"
+      />
+    </div>
+
+    <main class="main-container">
+      <p class="slogan">
+        At Luna Rosa, we embody the romance and passion of italian cuisine
+      </p>
+
+      <section class="menu-section">
+        <h1 class="menu-heading-main">Menu's</h1>
+        <div class="menu-type-list">
+          <p class="menu-link" onclick="toggleLunchMenu()">Lunch</p>
+          <p>|</p>
+          <p class="menu-link" onclick="toggleMainMenu()">Main</p>
+          <p>|</p>
+          <p class="menu-link" onclick="toggleDessertMenu()">Desserts</p>
+          <p>|</p>
+          <p class="menu-link" onclick="toggleDrinksMenu()">Drinks</p>
+          <p>|</p>
+          <p class="menu-link" onclick="toggleCocktailMenu()">Cocktails</p>
+          <p>|</p>
+          <p class="menu-link" onclick="toggleWineMenu()">Wine</p>
+        </div>
+      </section>
+
+      <section
+        class="lunch-menu"
+        id="lunch-menu"
+        style="transform: translateX(-100%)"
+      >
+        <button class="close-lunch-button" onclick="toggleLunchMenu()">
+          Close
+        </button>
+        <h1 class="lunch-menu-heading">Lunch Menu</h1>
+        <p class="lunch-menu-time">Served 11:00 - 14:00</p>
+
+        <h2 class="lunch-menu-category-heading">Starters</h2>
+        <ul class="lunch-menu-starters">
+          <li>
+            <span class="lunch-dish-name">Garlic Bread</span>
+            <span class="lunch-dish-price">£4.00</span>
+            <p class="lunch-dish-description">
+              Toasted bread topped with garlic butter.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">
+              Mozzarella Sticks in Tomato Sauce</span
+            >
+            <span class="lunch-dish-price">£5.50</span>
+            <p class="lunch-dish-description">
+              Crispy fried mozzarella sticks served with tangy tomato sauce.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Bruschetta</span>
+
+            <span class="lunch-dish-price">£4.50</span>
+            <p class="lunch-dish-description">
+              Toasted bread topped with fresh tomatoes, basil, garlic, and olive
+              oil.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Caprese Salad</span>
+
+            <span class="lunch-dish-price">£5.00</span>
+            <p class="lunch-dish-description">
+              Sliced tomatoes, fresh mozzarella, basil, and balsamic glaze.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Minestrone Soup</span>
+
+            <span class="lunch-dish-price">£5.00</span>
+            <p class="lunch-dish-description">
+              Classic Italian vegetable soup with pasta.
+            </p>
+          </li>
+        </ul>
+
+        <h2 class="lunch-menu-category-heading">Sharing Platters</h2>
+        <ul class="lunch-menu-sharing">
+          <li>
+            <span class="lunch-dish-name">Antipasto Platter</span>
+
+            <span class="lunch-dish-price">£15.00</span>
+            <p class="lunch-dish-description">
+              Selection of Italian cured meats, cheeses, olives, and bread.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Mezze Platter</span>
+
+            <span class="lunch-dish-price">£12.00</span>
+            <p class="lunch-dish-description">
+              Assortment of Mediterranean dips, pita bread, falafel, and stuffed
+              grape leaves.
+            </p>
+          </li>
+        </ul>
+
+        <h2 class="lunch-menu-category-heading">Mains</h2>
+        <ul class="lunch-menu-mains">
+          <li>
+            <span class="lunch-dish-name">Margherita Pizza</span>
+
+            <span class="lunch-dish-price">£8.50</span>
+            <p class="lunch-dish-description">
+              Classic Italian pizza topped with tomato sauce, fresh mozzarella,
+              and basil.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Veggie Supreme Pizza</span>
+
+            <span class="lunch-dish-price">£9.50</span>
+            <p class="lunch-dish-description">
+              Loaded with assorted fresh vegetables and mozzarella cheese.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Vegan Pizza</span>
+
+            <span class="lunch-dish-price">£10.00</span>
+            <p class="lunch-dish-description">
+              Pizza with vegan cheese, roasted vegetables, and tomato sauce.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Meat Lover's Pizza</span>
+
+            <span class="lunch-dish-price">£12.00</span>
+            <p class="lunch-dish-description">
+              Loaded with Italian sausage, pepperoni, ham, and bacon.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Chicken & Sweetcorn Pizza</span>
+
+            <span class="lunch-dish-price">£11.00</span>
+            <p class="lunch-dish-description">
+              Grilled chicken, sweetcorn, and mozzarella cheese on a tomato
+              sauce base.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Pesto Pizza</span>
+
+            <span class="lunch-dish-price">£11.00</span>
+            <p class="lunch-dish-description">
+              Pesto sauce base topped with fresh tomatoes, mozzarella, and pine
+              nuts.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Spaghetti Carbonara</span>
+
+            <span class="lunch-dish-price">£9.00</span>
+            <p class="lunch-dish-description">
+              Classic Italian pasta with pancetta, egg, and parmesan.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Chicken Caesar Salad</span>
+
+            <span class="lunch-dish-price">£8.50</span>
+            <p class="lunch-dish-description">
+              Crisp romaine lettuce topped with grilled chicken, croutons,
+              parmesan cheese, and Caesar dressing.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Panini with Prosciutto</span>
+
+            <span class="lunch-dish-price">£6.00</span>
+            <p class="lunch-dish-description">
+              Grilled panini filled with prosciutto, mozzarella, and pesto.
+            </p>
+          </li>
+        </ul>
+
+        <h2 class="lunch-menu-category-heading">Desserts</h2>
+        <ul class="lunch-menu-desserts">
+          <li>
+            <span class="lunch-dish-name">Tiramisu</span>
+
+            <span class="lunch-dish-price">£6.50</span>
+            <p class="lunch-dish-description">
+              Traditional Italian dessert made with layers of coffee-soaked
+              ladyfingers, mascarpone cheese, and cocoa powder.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Cheesecake</span>
+            <span class="lunch-dish-price">£5.50</span>
+            <p class="lunch-dish-description">
+              Creamy cheesecake served with fruit compote.
+            </p>
+          </li>
+          <li>
+            <span class="lunch-dish-name">Gelato</span>
+            <span class="lunch-dish-price">£4.00</span>
+            <p class="lunch-dish-description">
+              Italian-style ice cream available in various flavors.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="main-menu"
+        id="main-menu"
+        style="transform: translateX(-100%)"
+      >
+        <button class="close-mains-button" onclick="toggleMainMenu()">
+          Close
+        </button>
+        <h1 class="main-menu-heading">Main Menu</h1>
+        <p class="main-menu-time">Served from 17:30</p>
+
+        <h2 class="menu-category-heading">Pasta Dishes</h2>
+
+        <h3 class="menu-subcategory-heading">Seafood</h3>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Seafood Pasta</span>
+            <span class="main-dish-price">£7.50</span>
+            <p class="main-dish-description">
+              A delightful mix of seafood tossed with pasta in a light garlic
+              sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Linguine with Clams</span>
+            <span class="main-dish-price">£8.50</span>
+            <p class="main-dish-description">
+              Linguine pasta served with fresh clams in a white wine and garlic
+              sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Shrimp Alfredo</span>
+            <span class="main-dish-price">£9.00</span>
+            <p class="main-dish-description">
+              Creamy Alfredo sauce with succulent shrimp over fettuccine pasta.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Spaghetti alle Vongole</span>
+            <span class="main-dish-price">£8.00</span>
+            <p class="main-dish-description">
+              Spaghetti with clams, olive oil, garlic, and parsley.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Pasta Pescatore</span>
+            <span class="main-dish-price">£10.00</span>
+            <p class="main-dish-description">
+              Mixed seafood with tomato sauce over linguine.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Lobster Ravioli</span>
+            <span class="main-dish-price">£10.00</span>
+            <p class="main-dish-description">
+              Ravioli stuffed with lobster, served in a creamy tomato sauce.
+            </p>
+          </li>
+        </ul>
+
+        <h3 class="menu-subcategory-heading">Meat</h3>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Spaghetti Carbonara</span>
+            <span class="main-dish-price">£9.00</span>
+            <p class="main-dish-description">
+              Classic Italian pasta with pancetta, egg, and parmesan.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Lasagne</span>
+            <span class="main-dish-price">£6.00</span>
+            <p class="main-dish-description">
+              Layers of pasta, meat sauce, and cheese baked to perfection.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Meatball Pasta</span>
+            <span class="main-dish-price">£9.00</span>
+            <p class="main-dish-description">
+              Spaghetti served with homemade meatballs in marinara sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Fettuccine Alfredo</span>
+            <span class="main-dish-price">£8.00</span>
+            <p class="main-dish-description">
+              Fettuccine pasta with a creamy Alfredo sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Chorizo and Chicken Pasta Bake</span>
+            <span class="main-dish-price">£9.50</span>
+            <p class="main-dish-description">
+              Bow pasta baked with chunks of chorizo, tender chicken, and melted
+              cheese in a rich tomato sauce.
+            </p>
+          </li>
+
+          <li>
+            <span class="main-dish-name">Linguine Bolognese</span>
+            <span class="main-dish-price">£8.50</span>
+            <p class="main-dish-description">
+              Linguine pasta served with a traditional Bolognese sauce made with
+              ground beef, tomatoes, onions, and herbs.
+            </p>
+          </li>
+        </ul>
+
+        <h3 class="menu-subcategory-heading">Vegetable</h3>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Penne Arrabbiata</span>
+            <span class="main-dish-price">£7.00</span>
+            <p class="main-dish-description">
+              Penne pasta in a spicy tomato sauce with garlic and chili.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Pasta Primavera</span>
+            <span class="main-dish-price">£7.50</span>
+            <p class="main-dish-description">
+              Pasta with fresh vegetables in a light garlic and olive oil sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Vegetable Lasagne</span>
+            <span class="main-dish-price">£7.00</span>
+            <p class="main-dish-description">
+              Lasagne with layers of vegetables and tomato sauce.
+            </p>
+          </li>
+        </ul>
+
+        <h3 class="menu-subcategory-heading">Vegan</h3>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Vegan Spaghetti Bolognese</span>
+            <span class="main-dish-price">£8.00</span>
+            <p class="main-dish-description">
+              Spaghetti with a hearty vegan Bolognese sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Stuffed Peppers</span>
+            <span class="main-dish-price">£6.50</span>
+            <p class="main-dish-description">
+              Bell peppers stuffed with rice, vegetables, and herbs.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Vegan Risotto</span>
+            <span class="main-dish-price">£8.50</span>
+            <p class="main-dish-description">
+              Creamy risotto with seasonal vegetables and herbs.
+            </p>
+          </li>
+        </ul>
+
+        <h2 class="menu-category-heading">Steaks</h2>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Filet Mignon</span>
+            <span class="main-dish-price">£18.00</span>
+            <p class="main-dish-description">
+              A tender and juicy cut of beef, grilled to perfection.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Ribeye Steak</span>
+            <span class="main-dish-price">£16.50</span>
+            <p class="main-dish-description">
+              Flavorful ribeye steak, cooked to your liking.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">T-Bone Steak</span>
+            <span class="main-dish-price">£15.00</span>
+            <p class="main-dish-description">
+              A hearty T-bone steak, grilled to perfection.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Sirloin Steak</span>
+            <span class="main-dish-price">£14.00</span>
+            <p class="main-dish-description">
+              A juicy sirloin steak, seasoned and grilled.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">New York Strip</span>
+            <span class="main-dish-price">£17.00</span>
+            <p class="main-dish-description">
+              Classic New York strip steak, grilled to your preference.
+            </p>
+          </li>
+        </ul>
+
+        <h2 class="menu-category-heading">Pizza</h2>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Margherita Pizza</span>
+            <span class="main-dish-price">£9.00</span>
+            <p class="main-dish-description">
+              Classic Italian pizza topped with tomato sauce, fresh mozzarella,
+              and basil.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Pepperoni Pizza</span>
+            <span class="main-dish-price">£10.00</span>
+            <p class="main-dish-description">
+              Traditional pizza topped with pepperoni slices and mozzarella
+              cheese.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Vegetarian Pizza</span>
+            <span class="main-dish-price">£10.00</span>
+            <p class="main-dish-description">
+              Pizza loaded with assorted fresh vegetables and mozzarella cheese.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Vegan Pizza</span>
+            <span class="main-dish-price">£11.00</span>
+            <p class="main-dish-description">
+              Pizza with vegan cheese, roasted vegetables, and tomato sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Meat Lover's Pizza</span>
+            <span class="main-dish-price">£12.00</span>
+            <p class="main-dish-description">
+              Loaded with Italian sausage, pepperoni, ham, and bacon.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Seafood Pizza</span>
+            <span class="main-dish-price">£13.00</span>
+            <p class="main-dish-description">
+              Topped with shrimp, calamari, and clams, drizzled with garlic
+              sauce.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Pesto Pizza</span>
+            <span class="main-dish-price">£11.00</span>
+            <p class="main-dish-description">
+              Pesto sauce base topped with fresh tomatoes, mozzarella, and pine
+              nuts.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Chicken & Sweetcorn Pizza</span>
+            <span class="main-dish-price">£11.00</span>
+            <p class="main-dish-description">
+              Grilled chicken, sweetcorn, and mozzarella cheese on a tomato
+              sauce base.
+            </p>
+          </li>
+
+          <li>
+            <span class="main-dish-name">Create Your Own Pizza</span>
+            <span class="main-dish-price">£9.00 + £1.00 per topping</span>
+            <p class="main-dish-description">
+              Why not create your own Pizza? Choose from our range of toppings
+              and create your own taste of Italy.
+            </p>
+
+            <p class="main-dish-description">Choose your toppings:</p>
+            <ul class="topping-list">
+              <li class="topping-list">
+                Pepperoni, Mushrooms, Onions, Green Peppers, Black Olives,
+                Sweetcorn, Chicken, Chorizo, Italian Sausage, Bacon, Ham, Pine
+                Nuts
+              </li>
+            </ul>
+            <p class="main-dish-description">Choose your Sauce:</p>
+            <ul class="topping-list">
+              <li class="topping-list">
+                Tomato, Pesto, BBQ, Spicy Buffalo, White Sauce (Alfredo), Garlic
+                Butter
+              </li>
+            </ul>
+
+            <p class="main-dish-description">Choose your Cheese & Herbs:</p>
+            <ul class="topping-list">
+              <li class="topping-list">
+                Mozzarella, Vegan Cheese, Ricotta, Goat Cheese (Chèvre), Feta,
+                Basil, Rocket
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2 class="menu-category-heading">Sides</h2>
+        <ul class="main-menu-items">
+          <li>
+            <span class="main-dish-name">Fries</span>
+            <span class="main-dish-price">£3.00</span>
+            <p class="main-dish-description">
+              Crispy golden fries served hot and delicious.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Pitta Bread</span>
+            <span class="main-dish-price">£2.50</span>
+            <p class="main-dish-description">
+              Warm and soft pitta bread, perfect for dipping or as a side.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Onion Rings</span>
+            <span class="main-dish-price">£4.00</span>
+            <p class="main-dish-description">
+              Crunchy battered onion rings, a classic side dish.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Bruschetta</span>
+            <span class="main-dish-price">£5.00</span>
+            <p class="main-dish-description">
+              Toasted bread topped with fresh tomatoes, basil, garlic, and olive
+              oil.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Caprese Salad</span>
+            <span class="main-dish-price">£6.00</span>
+            <p class="main-dish-description">
+              Sliced tomatoes, fresh mozzarella, basil, and balsamic glaze.
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Dips</span>
+            <span class="main-dish-price">£3.50</span>
+            <p class="main-dish-description">
+              Selection of dips: garlic, BBQ, spicy tomato
+            </p>
+          </li>
+          <li>
+            <span class="main-dish-name">Olives</span>
+            <span class="main-dish-price">£3.50</span>
+            <p class="main-dish-description">
+              A bowl of mixed olives marinated in herbs and olive oil.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="dessert-menu"
+        id="dessert-menu"
+        style="transform: translateX(-100%)"
+      >
+        <button class="close-dessert-button" onclick="toggleDessertMenu()">
+          Close
+        </button>
+        <h1 class="dessert-menu-heading">Dessert Menu</h1>
+        <p class="dessert-menu-time">Served from 17:30</p>
+
+        <h2 class="dessert-menu-category-heading">Cakes</h2>
+        <ul class="dessert-menu-list">
+          <li>
+            <span class="dessert-dish-name">Carrot Cake</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              Bugs Bunny's Signature Carrot Cake!
+            </p>
+          </li>
+          <li>
+            <span class="dessert-dish-name">Daffy's Drizzle Cake</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              Daffy Ducks Signature Caramel Drizzle Cake! Served with a choice of vanilla ice cream, cream or custard.
+            </p>
+          </li>
+          <li>
+            <span class="dessert-dish-name">Jam & Cream Peacock</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              A colourful buttercream cake cake with a jam and cream centre.
+            </p>
+          </li>
+        </ul>
+
+        <h2 class="dessert-menu-category-heading">Classics</h2>
+        <ul class="dessert-menu-list">
+          <li>
+            <span class="dessert-dish-name">Sticky Toffee Pudding</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              A classical sticky toffee pudding served with ice cream or cream
+            </p>
+          </li>
+          <li>
+            <span class="dessert-dish-name">Mint Sponge</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              Mint sponge served with mint sauce.
+            </p>
+          </li>
+          <li>
+            <span class="dessert-dish-name">Creme Brulee</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              A rich custard base topped with a layer of hardened caramelized sugar.
+            </p>
+          </li>
+          <li>
+            <span class="dessert-dish-name">Banoffee Pie</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              Dessert pie made from bananas, whipped cream, and a thick caramel sauce, combined on a buttery biscuit, topped with toffee drizzle.
+            </p>
+          </li>
+          <li>
+            <span class="dessert-dish-name">Biscoff Cheesecake</span>
+            <span class="dessert-dish-price">£4.99</span>
+            <p class="dessert-dish-description">
+              A dreamy, creamy Biscoff Cheesecake!
+            </p>
+          </li>
+        </ul>
+
+
+        <h2 class="dessert-menu-category-heading">Ice cream</h2>
+        <ul class="dessert-menu-list">
+          <li>
+            <span class="dessert-dish-price">£1.89 per scoop</span>
+            <span class="dessert-dish-ice-cream">
+              Vanilla, 
+              Strawberry, 
+              Raspberry, 
+              Blueberry, 
+              Mint Choc Chip,
+              Banana, 
+              Banoffee, 
+              Bubblegum, 
+              Chocolate, 
+              White Chocolate, 
+              Mango
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="drinks-menu"
+        id="drinks-menu"
+        style="transform: translateX(-100%)"
+      >
+        <button class="close-drink-menu-button" onclick="toggleDrinksMenu()">
+          Close
+        </button>
+        <h1 class="drink-menu-heading">Drinks</h1>
+        <h2 class="drink-menu-category-heading">Spirits</h2>
+        <ul class="drink-list">
+          <li>
+            <span class="drink-name">Vodka</span>
+            <span class="drink-price">£7.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Gin</span>
+            <span class="drink-price">£7.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Bacardi</span>
+            <span class="drink-price">£7.99</span>
+          </li>
+        </ul>
+
+        <h2 class="drink-menu-category-heading">Soft-drinks</h2>
+        <ul class="drink-list">
+          <li>
+            <span class="drink-name">Coke</span>
+            <span class="drink-price">£2.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Lemonade</span>
+            <span class="drink-price">£2.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Fanta Orange</span>
+            <span class="drink-price">£2.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Fanta Lemon</span>
+            <span class="drink-price">£2.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Fresh Orange Juice</span>
+            <span class="drink-price">£3.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Fresh Apple Juice</span>
+            <span class="drink-price">£3.99</span>
+          </li>
+        </ul>
+
+        <h2 class="drink-menu-category-heading">Coffee</h2>
+        <ul class="drink-list">
+          <li>
+            <span class="drink-name">Cappuccino</span>
+            <span class="drink-price">£3.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Latte</span>
+            <span class="drink-price">£3.99</span>
+          </li>
+          <li>
+            <span class="drink-name">Vanilla Latte</span>
+            <span class="drink-price">£4.49</span>
+          </li>
+          <li>
+            <span class="drink-name">Caramel Latte</span>
+            <span class="drink-price">£4.49</span>
+          </li>
+          <li>
+            <span class="drink-name">Espresso</span>
+            <span class="drink-price">£3.99</span>
+          </li>
+        </ul>
+
+
+        
+
+
+
+      </section>
+
+      <section
+  class="wine-menu"
+  id="wine-menu"
+  style="transform: translateX(-100%)"
+>
+  <button class="close-wine-button" onclick="toggleWineMenu()">
+    Close
+  </button>
+  <h1 class="wine-menu-heading">Wine Menu</h1>
+
+  <h2 class="wine-menu-category-heading">Red Wines</h2>
+  <ul class="wine-menu-list">
+    <li>
+      <span class="wine-name">Cabernet Sauvignon</span>
+      <span class="wine-price">Glass: £6.00 | Bottle: £25.00</span>
+      <p class="wine-description">Rich and full-bodied with dark fruit flavors and a hint of oak.</p>
+    </li>
+    <li>
+      <span class="wine-name">Merlot</span>
+      <span class="wine-price">Glass: £5.50 | Bottle: £23.00</span>
+      <p class="wine-description">Smooth and velvety with notes of plum, cherry, and chocolate.</p>
+    </li>
+    <li>
+      <span class="wine-name">Pinot Noir</span>
+      <span class="wine-price">Glass: £7.00 | Bottle: £30.00</span>
+      <p class="wine-description">Light-bodied with delicate flavors of red berries and a hint of spice.</p>
+    </li>
+    <li>
+      <span class="wine-name">Shiraz</span>
+      <span class="wine-price">Glass: £6.50 | Bottle: £28.00</span>
+      <p class="wine-description">Bold and spicy with flavors of blackberry, plum, and pepper.</p>
+    </li>
+    <li>
+      <span class="wine-name">Malbec</span>
+      <span class="wine-price">Glass: £6.00 | Bottle: £26.00</span>
+      <p class="wine-description">Rich and robust with dark fruit flavors and a smoky finish.</p>
+    </li>
+  </ul>
+
+  <h2 class="wine-menu-category-heading">White Wines</h2>
+  <ul class="wine-menu-list">
+    <li>
+      <span class="wine-name">Chardonnay</span>
+      <span class="wine-price">Glass: £5.50 | Bottle: £24.00</span>
+      <p class="wine-description">Full-bodied with flavors of apple, pear, and a touch of oak.</p>
+    </li>
+    <li>
+      <span class="wine-name">Sauvignon Blanc</span>
+      <span class="wine-price">Glass: £6.00 | Bottle: £26.00</span>
+      <p class="wine-description">Crisp and refreshing with notes of citrus and tropical fruits.</p>
+    </li>
+    <li>
+      <span class="wine-name">Pinot Grigio</span>
+      <span class="wine-price">Glass: £5.00 | Bottle: £22.00</span>
+      <p class="wine-description">Light and zesty with flavors of green apple and lemon.</p>
+    </li>
+    <li>
+      <span class="wine-name">Riesling</span>
+      <span class="wine-price">Glass: £6.50 | Bottle: £27.00</span>
+      <p class="wine-description">Sweet and floral with notes of apricot, peach, and honey.</p>
+    </li>
+    <li>
+      <span class="wine-name">Moscato</span>
+      <span class="wine-price">Glass: £5.00 | Bottle: £21.00</span>
+      <p class="wine-description">Sweet and fruity with flavors of peach, orange blossom, and nectarine.</p>
+    </li>
+  </ul>
+
+  <h2 class="wine-menu-category-heading">Rosé Wines</h2>
+  <ul class="wine-menu-list">
+    <li>
+      <span class="wine-name">Provence Rosé</span>
+      <span class="wine-price">Glass: £6.50 | Bottle: £28.00</span>
+      <p class="wine-description">Dry and elegant with flavors of strawberry, raspberry, and a hint of herbs.</p>
+    </li>
+    <li>
+      <span class="wine-name">White Zinfandel</span>
+      <span class="wine-price">Glass: £5.00 | Bottle: £22.00</span>
+      <p class="wine-description">Sweet and refreshing with flavors of strawberry and melon.</p>
+    </li>
+    <li>
+      <span class="wine-name">Grenache Rosé</span>
+      <span class="wine-price">Glass: £6.00 | Bottle: £25.00</span>
+      <p class="wine-description">Crisp and light with flavors of red berries and citrus.</p>
+    </li>
+    <li>
+      <span class="wine-name">Sangiovese Rosé</span>
+      <span class="wine-price">Glass: £6.50 | Bottle: £27.00</span>
+      <p class="wine-description">Dry and fruity with flavors of cherry, raspberry, and a hint of spice.</p>
+    </li>
+    <li>
+      <span class="wine-name">Pinot Noir Rosé</span>
+      <span class="wine-price">Glass: £7.00 | Bottle: £30.00</span>
+      <p class="wine-description">Delicate and light with flavors of strawberry, peach, and floral notes.</p>
+    </li>
+  </ul>
+</section>
+
+
+      <section
+      class="cocktail-menu"
+      id="cocktail-menu"
+      style="transform: translateX(-100%)"
+    >
+      <button class="close-cocktail-button" onclick="toggleCocktailMenu()">
+        Close
+      </button>
+      <h1 class="cocktail-menu-heading">Cocktail Menu</h1>    
+      <h2 class="cocktail-menu-category-heading">Classics</h2>
+      <ul class="cocktail-menu-list">
+        <li>
+          <span class="cocktail-dish-name">Margarita</span>
+          <span class="cocktail-dish-price">£8.00</span>
+          <p class="cocktail-dish-description">
+            Tequila, triple sec, and lime juice served in a salt-rimmed glass.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Mojito</span>
+          <span class="cocktail-dish-price">£7.50</span>
+          <p class="cocktail-dish-description">
+            White rum, sugar, lime juice, soda water, and mint.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Old Fashioned</span>
+          <span class="cocktail-dish-price">£9.00</span>
+          <p class="cocktail-dish-description">
+            Bourbon, bitters, sugar, and a twist of citrus rind.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Cosmopolitan</span>
+          <span class="cocktail-dish-price">£8.50</span>
+          <p class="cocktail-dish-description">
+            Vodka, triple sec, cranberry juice, and lime juice.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Daiquiri</span>
+          <span class="cocktail-dish-price">£8.00</span>
+          <p class="cocktail-dish-description">
+            Rum, citrus juice (typically lime), and sugar.
+          </p>
+        </li>
+      </ul>
+    
+      <h2 class="cocktail-menu-category-heading">Signature Cocktails</h2>
+      <ul class="cocktail-menu-list">
+        <li>
+          <span class="cocktail-dish-name">Lavender Bliss</span>
+          <span class="cocktail-dish-price">£10.00</span>
+          <p class="cocktail-dish-description">
+            Gin, lavender syrup, lemon juice, and a splash of soda.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Tropical Sunset</span>
+          <span class="cocktail-dish-price">£9.50</span>
+          <p class="cocktail-dish-description">
+            Rum, pineapple juice, coconut cream, and grenadine.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Berry Smash</span>
+          <span class="cocktail-dish-price">£9.00</span>
+          <p class="cocktail-dish-description">
+            Vodka, mixed berries, mint, lemon juice, and simple syrup.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Cucumber Cooler</span>
+          <span class="cocktail-dish-price">£8.50</span>
+          <p class="cocktail-dish-description">
+            Gin, cucumber, lime juice, mint, and soda water.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Spicy Paloma</span>
+          <span class="cocktail-dish-price">£8.50</span>
+          <p class="cocktail-dish-description">
+            Tequila, grapefruit soda, lime juice, and a hint of jalapeño.
+          </p>
+        </li>
+      </ul>
+    
+      <h2 class="cocktail-menu-category-heading">Dessert Cocktails</h2>
+      <ul class="cocktail-menu-list">
+        <li>
+          <span class="cocktail-dish-name">Espresso Martini</span>
+          <span class="cocktail-dish-price">£9.00</span>
+          <p class="cocktail-dish-description">
+            Vodka, coffee liqueur, and a shot of espresso.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Chocolate Martini</span>
+          <span class="cocktail-dish-price">£9.50</span>
+          <p class="cocktail-dish-description">
+            Vodka, chocolate liqueur, and a hint of cream.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Strawberry Shortcake</span>
+          <span class="cocktail-dish-price">£8.50</span>
+          <p class="cocktail-dish-description">
+            Vodka, strawberry puree, cream, and a touch of vanilla.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Banana Split</span>
+          <span class="cocktail-dish-price">£9.00</span>
+          <p class="cocktail-dish-description">
+            Rum, banana liqueur, chocolate syrup, and cream.
+          </p>
+        </li>
+        <li>
+          <span class="cocktail-dish-name">Peach Bellini</span>
+          <span class="cocktail-dish-price">£8.00</span>
+          <p class="cocktail-dish-description">
+            Prosecco and peach puree.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+      <section class="event-offers-section">
+        <div class="offers-container">
+          <h1 class="offers-heading">Offers</h1>
+
+          <div class="buttons-container">
+            <button
+              onclick="toggleSelection('offer-one')"
+              class="event-offer-buttons"
+            >
+              Luna Rosa Romance
+            </button>
+            <button
+              onclick="toggleSelection('offer-two')"
+              class="event-offer-buttons"
+            >
+              Sunday night special
+            </button>
+            <button
+              onclick="toggleSelection('offer-three')"
+              class="event-offer-buttons"
+            >
+              Festa di Mezzogiorno
+            </button>
+          </div>
+
+          <div class="offer-container" id="offer-one" style="display: none">
+            <p class="offer-title">Luna Rosa Romance</p>
+            <p class="offers">
+              Luna Rosa Romance Package - 3 course dinner for 2, 1 bottle of
+              house red - seating in our romance booths or secret garden
+            </p>
+            <div class="offers-img-container">
+              <img src="https://imgur.com/qTlE5em.png" class="offers-img" />
+            </div>
+            <p class="offers-book-table">Book a table</p>
+          </div>
+
+          <div class="offer-container" id="offer-two" style="display: none">
+            <p class="offer-title">Sunday night special</p>
+            <p class="offers">3 main dishes for £25</p>
+            <div class="offers-img-container">
+              <img src="https://imgur.com/qTlE5em.png" class="offers-img" />
+            </div>
+            <p class="offers-book-table">Book a table</p>
+          </div>
+
+          <div id="offer-three" class="offer-container" style="display: none">
+            <p class="offer-title">Festa di Mezzogiorno</p>
+            <p class="offers">
+              Brunch, Lunch, & Cocktail Speciali" - Midday Feast: Brunch, Lunch,
+              & Special Cocktails
+            </p>
+
+            <div class="offers-img-container">
+              <img src="https://imgur.com/qTlE5em.png" class="offers-img" />
+            </div>
+            <p class="offers-book-table">Book a table</p>
+          </div>
+        </div>
+
+        <div class="events-container">
+          <h2 class="events-heading">Events</h2>
+
+          <div class="buttons-container">
+            <button
+              onclick="toggleSelection('event-one')"
+              class="event-offer-buttons"
+            >
+              Grape Expectations
+            </button>
+            <button
+              onclick="toggleSelection('event-two')"
+              class="event-offer-buttons"
+            >
+              Full Moon Madness
+            </button>
+            <button
+              onclick="toggleSelection('event-three')"
+              class="event-offer-buttons"
+            >
+              Wood Fire Fridays
+            </button>
+          </div>
+
+          <div id="event-one" class="event-container" style="display: none">
+            <p class="events-title">Grape Expectations</p>
+            <p class="events">
+              An Italian Wine Affair! Join us for an enchanting evening of wine
+              tasting, where we explore the rich and diverse flavors of Italian
+              wines. Savor each sip as you journey through Italy's renowned wine
+              regions, guided by our expert sommelier. Complementing the
+              exquisite wines, indulge in delectable food platters featuring
+              authentic Italian delicacies. From artisanal cheeses and cured
+              meats to fresh bruschetta and sumptuous olives, each bite is
+              designed to enhance your tasting experience. Raise your glass and
+              toast to a night of elegance, flavor, and discovery at Grape
+              Expectations!
+            </p>
+            <div class="event-img-container">
+              <img src="https://imgur.com/qTlE5em.png" class="events-img" />
+            </div>
+            <p class="events-book-table">Book a table</p>
+          </div>
+
+          <div id="event-two" class="event-container" style="display: none">
+            <p class="events-title">Full Moon Madness</p>
+            <p class="events">Full moon madness details...</p>
+            <div class="event-img-container">
+              <img src="https://imgur.com/qTlE5em.png" class="events-img" />
+            </div>
+            <p class="events-book-table">Book a table</p>
+          </div>
+
+          <div id="event-three" class="event-container" style="display: none">
+            <p class="events-title">Wood Fire Friday</p>
+            <p class="events">
+              Wood Fire Fridays - Enjoy an evening under the stars with an all
+              you can eat wood fire pizza special. With an outdoor bar and
+              heated garden, you can enjoy a night watching our chefs create and
+              cook your pizzas.
+            </p>
+            <div class="event-img-container">
+              <img src="https://imgur.com/qTlE5em.png" class="events-img" />
+            </div>
+            <p class="events-book-table">Book a table</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="luna-rosa-origins-section">
+        <div class="history-container">
+          <h1 class="history-heading">The Enchanting Tale of Luna Rosa</h1>
+          <p>
+            Welcome to Luna Rosa, an Italian restaurant with a history as rich
+            and flavourful as its signature marinara sauce. Nestled in the heart
+            of a quaint town, Luna Rosa isn't just a place to dine—it's a
+            magical journey through time, animated by a cast of unforgettable
+            characters.
+          </p>
+
+          <h2 class="origins-heading">Origins of Luna Rosa</h2>
+          <p>
+            Luna Rosa was founded in the early 1900s by the legendary chef duo,
+            Tony and Joe, inspired by their love story from the classic tale,
+            Lady and the Tramp. They envisioned a cosy eatery where love and
+            laughter would be as abundant as the pasta and wine. The name Luna
+            Rosa, meaning "Red Moon," was chosen to reflect the enchanting
+            evenings under the Italian sky, where every meal is a celebration of
+            life and love.
+          </p>
+
+          <h3 class="meet-the-team-heading">The Legendary Crew</h3>
+          <p>
+            Over the decades, Luna Rosa has become a culinary landmark,
+            attracting talents from across the globe, and even from the world of
+            cartoons.
+          </p>
+        </div>
+
+        <div class="meet-the-team">
+          <div class="team-role-container">
+            <p class="employee-name">Head Chef: Bugs Bunny</p>
+            <div class="team-img-container">
+              <img src="https://imgur.com/Nni4Bnd.png" class="employee-img" />
+            </div>
+            <p class="employee-about">
+              Bugs Bunny, the renowned culinary genius, hopped his way into the
+              heart of Luna Rosa. Known for his inventive dishes and playful
+              presentation, Bugs brings a unique flair to Italian cuisine. His
+              signature carrot ravioli has become a favourite among our
+              regulars.
+            </p>
+          </div>
+
+          <div class="team-role-container">
+            <p class="employee-name">Sous Chef: Daffy Duck</p>
+            <div class="team-img-container">
+              <img src="https://imgur.com/M48yghq.png" class="employee-img" />
+            </div>
+            <p class="employee-about">
+              Daffy Duck, the fiery and passionate sous chef, ensures that every
+              dish is cooked to perfection. His enthusiasm in the kitchen is
+              matched only by his love for spicy arrabbiata sauce. Despite the
+              occasional kitchen mishap, Daffy's dishes never fail to delight.
+            </p>
+          </div>
+
+          <div class="team-role-container">
+            <p class="employee-name">Chaperone: Eric Cartman</p>
+            <div class="team-img-container">
+              <img src="https://imgur.com/TuFdqvD.png" class="employee-img" />
+            </div>
+            <p class="employee-about">
+              Eric Cartman, known for his larger-than-life personality, serves
+              as the chaperone and maître d' of Luna Rosa. With his impeccable
+              taste and strict standards, he ensures that every guest's
+              experience is unforgettable. Just don't ask him to sing for you,
+              unless you're prepared for an unforgettable performance.
+            </p>
+          </div>
+
+          <div class="team-role-container">
+            <p class="employee-name">Chefs: Tony and Joe</p>
+            <div class="team-img-container">
+              <img src="https://imgur.com/fZ23xxw.png" class="employee-img" />
+            </div>
+            <p class="employee-about">
+              The original founders, Tony and Joe, still grace the kitchen with
+              their presence. Their timeless recipes and heartfelt cooking
+              continue to be the soul of Luna Rosa. Their legendary spaghetti
+              and meatballs are a must-try, often served with a side of their
+              charming stories from the early days.
+            </p>
+          </div>
+        </div>
+
+        <div class="what-we-do-container">
+          <h4 class="history-heading-four">A Culinary Wonderland</h4>
+          <p class="what-we-do">
+            Luna Rosa isn't just a restaurant; it's an experience. The walls are
+            adorned with vintage photographs, fairy lights twinkle overhead, and
+            the aroma of freshly baked bread fills the air. Live accordion music
+            serenades guests as they savour dishes that blend traditional
+            Italian flavours with whimsical twists.
+          </p>
+          <p class="what-we-do">
+            Every evening, as the red moon rises, Luna Rosa transforms into a
+            place where reality meets fantasy. Patrons might catch a glimpse of
+            Bugs and Daffy playfully bickering in the kitchen, or hear Cartman's
+            boisterous laughter echoing through the dining hall.
+          </p>
+          <p class="what-we-do">
+            So, whether you're here for a romantic dinner, a family celebration,
+            or just a delightful escape from the ordinary, Luna Rosa promises a
+            dining experience that is both enchanting and delicious.
+          </p>
+          <p class="what-we-do">
+            Buon appetito, and welcome to Luna Rosa—a place where magic happens,
+            one plate at a time.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function toggleSelection(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".menu-tab")
+          .addEventListener("click", function () {
+            document
+              .querySelector(".main-container")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".about-tab")
+          .addEventListener("click", function () {
+            document
+              .querySelector(".luna-rosa-origins-section")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".contact-tab")
+          .addEventListener("click", function () {
+            document
+              .querySelector(".footer")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".meet-the-team-footer")
+          .addEventListener("click", function () {
+            document
+              .querySelector(".meet-the-team-heading")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".history-footer")
+          .addEventListener("click", function () {
+            document
+              .querySelector(".origins-heading")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      });
+
+      function toggleLunchMenu() {
+        let menuChoice = document.getElementById("lunch-menu");
+        if (menuChoice.style.transform === "translateX(0%)") {
+          menuChoice.style.transform = "translateX(-500%)";
+        } else {
+          menuChoice.style.transform = "translateX(0%)";
+        }
+      }
+
+      function toggleMainMenu() {
+        let menuChoice = document.getElementById("main-menu");
+        if (menuChoice.style.transform === "translateX(0%)") {
+          menuChoice.style.transform = "translateX(-500%)";
+        } else {
+          menuChoice.style.transform = "translateX(0%)";
+        }
+      }
+
+      function toggleDessertMenu() {
+        let menuChoice = document.getElementById("dessert-menu");
+        if (menuChoice.style.transform === "translateX(0%)") {
+          menuChoice.style.transform = "translateX(-500%)";
+        } else {
+          menuChoice.style.transform = "translateX(0%)";
+        }
+      }
+
+      function toggleDrinksMenu() {
+        let menuChoice = document.getElementById("drinks-menu");
+        if (menuChoice.style.transform === "translateX(0%)") {
+          menuChoice.style.transform = "translateX(-500%)";
+        } else {
+          menuChoice.style.transform = "translateX(0%)";
+        }
+      }
+
+      function toggleWineMenu() {
+        let menuChoice = document.getElementById("wine-menu");
+        if (menuChoice.style.transform === "translateX(0%)") {
+          menuChoice.style.transform = "translateX(-500%)";
+        } else {
+          menuChoice.style.transform = "translateX(0%)";
+        }
+      }
+
+      function toggleCocktailMenu() {
+        let menuChoice = document.getElementById("cocktail-menu");
+        if (menuChoice.style.transform === "translateX(0%)") {
+          menuChoice.style.transform = "translateX(-500%)";
+        } else {
+          menuChoice.style.transform = "translateX(0%)";
+        }
+      }
+    </script>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-content-container">
+      <div class="footer-details-container">
+        <h1>
+          About us
+          <div class="heart-colon-container">
+            <span class="heart-colon">❤️</span>
+            <span class="heart-colon">❤️</span>
+          </div>
+        </h1>
+
+        <p class="history-footer">History</p>
+        <p class="meet-the-team-footer">Meet the team</p>
+        <p>Charity projects</p>
+      </div>
+
+      <div class="footer-details-container">
+        <h1>Food:</h1>
+        <p>Lunch</p>
+        <p>Main</p>
+        <p>Desserts</p>
+      </div>
+      <div class="footer-details-container">
+        <h1>Drinks:</h1>
+        <p>Drinks</p>
+        <p>Cocktails</p>
+        <p>Wine</p>
+      </div>
+
+      <div class="footer-details-container">
+        <h1>Contact us:</h1>
+        <p><i class="fa-regular fa-envelope"></i> lunaRosa@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 012XX 12XX5</p>
+        <p>Follow us:</p>
+        <div class="social-links">
+          <p class="social-icons"><i class="fa-brands fa-instagram"></i></p>
+          <p class="social-icons">|</p>
+          <p class="social-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+          </p>
+          <p class="social-icons">|</p>
+          <p class="social-icons"><i class="fa-brands fa-twitter"></i></p>
+          <p class="social-icons">|</p>
+          <p class="social-icons"><i class="fa-brands fa-tiktok"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal-container">
+      <p>© Luna Rosa Restaurants Ltd</p>
+      <p>|</p>
+      <p>Privacy Policy</p>
+      <p>|</p>
+      <p>Corporate Statement</p>
+      <p>|</p>
+      <p>Terms and conditions</p>
+    </div>
+  </footer>
+</html>

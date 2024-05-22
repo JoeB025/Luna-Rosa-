@@ -1,0 +1,17 @@
+.welcome-heading {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-size: 70px;
+  color: rgb(139, 0, 0);
+}
+
+.book-table-header {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-size: 40px;
+  color: rgb(139, 0, 0);
+}
+
+.book-table-header:hover {
+  cursor: pointer;
+}

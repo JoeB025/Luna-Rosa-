@@ -1,0 +1,80 @@
+.luna-rosa-origins-section {
+  background-color: white;
+  color: rgb(139, 0, 0);
+  text-align: center;
+}
+
+.history-container {
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 20px;
+}
+
+.history-heading {
+  font-size: 40px;
+}
+
+.origins-heading {
+  padding-top: 20px;
+}
+
+
+.meet-the-team-heading {
+  padding-top: 20px;
+}
+
+
+.meet-the-team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.team-role-container {
+  border: solid rgb(139, 0, 0) 4px;
+  display: flex;
+  width: 300px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-name {
+  font-size: 25px;
+  width: 100%;
+}
+
+.team-img-container {
+  width: 150px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-img {
+  width: 100px;
+}
+
+.employee-about {
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.what-we-do-container {
+  padding: 50px;
+}
+
+.history-heading-four {
+  font-size: 25px;
+}
+
+.what-we-do {
+  font-size: 16px;
+}

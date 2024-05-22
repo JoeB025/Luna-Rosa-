@@ -1,0 +1,80 @@
+.event-offers-section {
+  display: flex;
+  flex-direction: row;
+  font-family: "Italianno", cursive;
+  padding-bottom: 40px;
+}
+
+.events-container,
+.offers-container {
+  border: solid rgb(255, 255, 255) 3px;
+  width: 50%;
+  margin: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+.offers-heading,
+.events-heading {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.event-offer-buttons {
+  height: 40px;
+  width: 200px;
+  border-radius: 80px;
+  background-color: inherit;
+  border: solid 3px white;
+  color: white;
+  font-family: "Italianno", cursive;
+  font-size: 28px;
+}
+
+.event-offer-buttons:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.offer-title,
+.events-title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.offers,
+.events {
+  text-align: justify;
+  padding: 0px 30px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.offers-img-container,
+.events-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.offers-img,
+.events-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.offers-book-table,
+.events-book-table {
+  display: block;
+  font-size: 40px;
+}
+
+
+
