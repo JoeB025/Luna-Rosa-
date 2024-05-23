@@ -9,15 +9,17 @@
   .welcome-heading {
     text-align: center;
     font-family: "Italianno", cursive;
-    font-size: 28px;
+    font-size: 40px;
     margin-top: 50px;
     margin-bottom: -20px;
+    letter-spacing: 2px;
   }
 
   .slogan-small-screen {
     text-align: center;
     font-family: "Italianno", cursive;
     font-size: 22px;
+    letter-spacing: 2px;
     padding: 0px 30px;
     margin-bottom: -10px;
   }
@@ -33,6 +35,7 @@
     width: 100px;
     height: 20px;
     padding-top: 2px;
+    margin-bottom: 40px;
   }
 
  

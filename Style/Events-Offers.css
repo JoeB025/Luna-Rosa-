@@ -36,12 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1.5px white;
-  border-radius: 100px;
+  border: none;
   width: 100px;
   color: white;
   font-family: "Italianno", cursive;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .offer-title,
@@ -76,7 +75,15 @@
   display: block;
   font-size: 20px;
   margin-top: 50px;
+}
 
+.event-offer-name {
+  display: block;
+  margin-bottom: -10px;
+}
+
+.arrow-down {
+  display: block;
 }
   
 }
@@ -123,10 +130,10 @@
   width: 30%;
   border-radius: 80px;
   background-color: inherit;
-  border: solid 3px white;
+  border: none;
   color: white;
   font-family: "Italianno", cursive;
-  font-size: 25px;
+  font-size: 28px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -142,14 +149,16 @@
 .events-title {
   font-size: 50px;
   text-align: center;
+  letter-spacing: 4px;
 }
 
 .offers,
 .events {
   text-align: justify;
   padding: 0px 30px;
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: "Italianno", cursive;
 }
 
 .offers-img-container,
@@ -168,6 +177,15 @@
 .events-book-table {
   display: block;
   font-size: 40px;
+}
+
+.event-offer-name {
+  display: block;
+  margin-bottom: -10px;
+}
+
+.arrow-down {
+  display: block;
 }
 
 }

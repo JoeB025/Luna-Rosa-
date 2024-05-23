@@ -152,7 +152,7 @@
   border-bottom: 1px solid rgb(255, 255, 255);
   padding-bottom: 5px;
   letter-spacing: 3px;
-  color: rgb(255, 99, 99);
+  color: rgb(179, 0, 255);
 }
 
 .menu-subcategory-heading {
@@ -162,6 +162,7 @@
   text-align: center;
   padding-bottom: 3px;
   letter-spacing: 3px;
+  text-decoration: underline;
 }
 
 .main-menu-items {
