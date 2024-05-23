@@ -1,3 +1,68 @@
+@media only screen and (max-width: 767px) {
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar.show {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .burger-menu .fa-bars {
+    transition: transform 0.3s;
+  }
+
+  .burger-menu.open .fa-bars {
+    transform: rotate(90deg);
+  }
+
+  .restaurant-heading-large-screen {
+    display: none;
+  }
+
+  .restaurant-heading-small-screen {
+    font-family: "Italianno", cursive;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .nav-bar-list {
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Italianno", cursive;
+  }
+
+  .home-tab,
+  .menu-tab,
+  .about-tab,
+  .contact-tab {
+    margin-left: -40px;
+  }
+
+}
+
+
+/* Large devices */
+
+@media only screen and (min-width: 768px) {
+
+  .burger-menu {
+    display: none;
+  }
+
 .nav-bar {
   background-color: rgb(139, 0, 0);
   color: white;
@@ -12,10 +77,15 @@
   height: 120px;
 }
 
-.restaurant-name-heading {
+.restaurant-heading-large-screen {
   font-family: "Italianno", cursive;
   margin-left: 60px;
   text-align: center;
+  font-size: 40px;
+}
+
+.restaurant-heading-small-screen {
+  display: none;
 }
 
 .nav-bar-list {
@@ -33,4 +103,6 @@
 .contact-tab:hover {
   color: rgb(0, 0, 0);
   cursor: pointer;
+}
+
 }

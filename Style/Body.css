@@ -1,5 +1,8 @@
-/* body {
-  background-image: url("https://imgur.com/Hc0dmWb.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-} */
+@media only screen and (max-width: 767px) {
+
+  body {
+    background: rgba(120, 0, 0, 0.95);
+    color: rgb(255, 255, 255);
+  }
+
+}

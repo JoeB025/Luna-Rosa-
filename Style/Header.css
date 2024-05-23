@@ -1,3 +1,50 @@
+@media only screen and (max-width: 767px) {
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-heading {
+    text-align: center;
+    font-family: "Italianno", cursive;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+  }
+
+  .slogan-small-screen {
+    text-align: center;
+    font-family: "Italianno", cursive;
+    font-size: 22px;
+    padding: 0px 30px;
+    margin-bottom: -10px;
+  }
+  
+  .book-table-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Italianno", cursive;
+    font-size: 16px;
+    border: solid white 1.5px;
+    border-radius: 100px;
+    width: 100px;
+    height: 20px;
+    padding-top: 2px;
+  }
+
+ 
+  
+
+}
+
+
+/* Large devices */
+
+@media only screen and (min-width: 768px) {
+
 .welcome-heading {
   text-align: center;
   font-family: "Italianno", cursive;
@@ -14,4 +61,10 @@
 
 .book-table-header:hover {
   cursor: pointer;
+}
+
+.slogan-small-screen {
+  display: none;
+}
+
 }

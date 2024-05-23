@@ -1,7 +1,97 @@
+@media only screen and (max-width: 767px) {
+
+  .luna-rosa-origins-section {
+    background-color: white;
+    color: rgb(139, 0, 0);
+    text-align: center;
+  }
+  
+  .history-container {
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 20px;
+  }
+  
+  .history-heading {
+    font-size: 25px;
+  }
+  
+  .origins-heading {
+    padding-top: 20px;
+  }
+  
+  
+  .meet-the-team-heading {
+    padding-top: 20px;
+  }
+  
+  
+  .meet-the-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  
+  .team-role-container {
+    border: solid rgb(139, 0, 0) 4px;
+    display: flex;
+    width: 140px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .employee-name {
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .team-img-container {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .employee-img {
+    width: 30px;
+  }
+  
+  .employee-about {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  
+  .what-we-do-container {
+    padding: 20px;
+  }
+  
+  .history-heading-four {
+    font-size: 25px;
+  }
+  
+  .what-we-do {
+    font-size: 16px;
+  }
+
+}
+
+
+/* Large devices */
+
+@media only screen and (min-width: 768px) {
+
 .luna-rosa-origins-section {
   background-color: white;
   color: rgb(139, 0, 0);
   text-align: center;
+  font-family: "Italianno", cursive;
 }
 
 .history-container {
@@ -12,16 +102,39 @@
 }
 
 .history-heading {
-  font-size: 40px;
+  font-size: 50px;
+}
+
+.history-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: black;
 }
 
 .origins-heading {
   padding-top: 20px;
+  font-size: 45px;
+}
+
+.origins-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: black;
 }
 
 
 .meet-the-team-heading {
   padding-top: 20px;
+  font-size: 40px;
+}
+
+.meet-the-team-text {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: black;
 }
 
 
@@ -45,7 +158,7 @@
 }
 
 .employee-name {
-  font-size: 25px;
+  font-size: 35px;
   width: 100%;
 }
 
@@ -65,6 +178,7 @@
   text-align: justify;
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 25px;
 }
 
 .what-we-do-container {
@@ -72,9 +186,14 @@
 }
 
 .history-heading-four {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .what-we-do {
-  font-size: 16px;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+}
+
 }

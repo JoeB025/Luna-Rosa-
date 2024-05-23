@@ -30,9 +30,14 @@
     <title>Luna Rosa</title>
   </head>
   <body>
-    <nav class="nav-bar">
-      <h1 class="restaurant-name-heading">Luna Rosa</h1>
 
+<h1 class="restaurant-heading-small-screen">Luna Rosa</h1>
+ <div class="burger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    <nav class="nav-bar">
+      <h1 class="restaurant-heading-large-screen">Luna Rosa</h1>
       <ul class="nav-bar-list">
         <li class="home-tab">Home</li>
         <li class="menu-tab">Menu</li>
@@ -43,6 +48,9 @@
 
     <header class="header-section">
       <h1 class="welcome-heading">Welcome to Luna Rosa</h1>
+      <p class="slogan-small-screen">
+        At Luna Rosa, we embody the romance and passion of italian cuisine
+      </p>
       <p class="book-table-header">Book a table</p>
     </header>
 
@@ -68,7 +76,7 @@
     </div>
 
     <main class="main-container">
-      <p class="slogan">
+      <p class="slogan-large-screen">
         At Luna Rosa, we embody the romance and passion of italian cuisine
       </p>
 
@@ -1183,7 +1191,7 @@
       <section class="luna-rosa-origins-section">
         <div class="history-container">
           <h1 class="history-heading">The Enchanting Tale of Luna Rosa</h1>
-          <p>
+          <p class="history-text">
             Welcome to Luna Rosa, an Italian restaurant with a history as rich
             and flavourful as its signature marinara sauce. Nestled in the heart
             of a quaint town, Luna Rosa isn't just a place to dine—it's a
@@ -1192,7 +1200,7 @@
           </p>
 
           <h2 class="origins-heading">Origins of Luna Rosa</h2>
-          <p>
+          <p class="origins-text">
             Luna Rosa was founded in the early 1900s by the legendary chef duo,
             Tony and Joe, inspired by their love story from the classic tale,
             Lady and the Tramp. They envisioned a cosy eatery where love and
@@ -1203,7 +1211,7 @@
           </p>
 
           <h3 class="meet-the-team-heading">The Legendary Crew</h3>
-          <p>
+          <p class="meet-the-team-text">
             Over the decades, Luna Rosa has become a culinary landmark,
             attracting talents from across the globe, and even from the world of
             cartoons.
@@ -1407,6 +1415,16 @@
           menuChoice.style.transform = "translateX(0%)";
         }
       }
+
+
+      const burgerMenu = document.querySelector(".burger-menu");
+      const navBar = document.querySelector(".nav-bar");
+
+      burgerMenu.addEventListener("click", () => {
+        navBar.classList.toggle("show");
+        burgerMenu.classList.toggle("open");
+      });
+
     </script>
   </body>
 

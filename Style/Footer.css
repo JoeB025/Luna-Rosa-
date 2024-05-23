@@ -1,3 +1,63 @@
+@media only screen and (max-width: 767px) {
+
+  .footer {
+    background-color: rgb(100, 0, 0);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    margin-top: 20px;
+  }
+
+  .footer-content-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .heart-colon-container {
+    display: inline-block;
+  }
+  
+  .heart-colon {
+    display: flex;
+    font-size: 3px;
+    color: white;  
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    margin: 3px;
+  }
+
+  .footer-legal-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 0, 0);
+    width: 100%;
+    gap: 5px;
+    margin-bottom: -30px;
+    padding-block: 5px;
+  }
+  
+
+}
+
+
+/* Large devices */
+
+@media only screen and (min-width: 768px) {
+
 .footer {
   background-color: rgb(100, 0, 0);
   color: white;
@@ -57,4 +117,6 @@
 .history-footer:hover,
 .meet-the-team-footer:hover {
   cursor: pointer;
+}
+
 }

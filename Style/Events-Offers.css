@@ -1,6 +1,95 @@
-.event-offers-section {
+@media only screen and (max-width: 767px) {
+
+  .event-offers-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Italianno", cursive;
+  }
+
+.events-container,
+.offers-container {
+  border: solid rgb(255, 255, 255) 2px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 350px;
+  padding-bottom: 20px;
+}
+
+.offers-heading,
+.events-heading {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+
+.buttons-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.event-offer-buttons {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1.5px white;
+  border-radius: 100px;
+  width: 100px;
+  color: white;
+  font-family: "Italianno", cursive;
+  font-size: 14px;
+}
+
+.offer-title,
+.events-title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: -15px;
+}
+
+.offers,
+.events {
+  text-align: justify;
+  padding: 0px 30px;
+  font-size: 16px;
+  font-family: "Italianno", cursive;
+}
+
+.offers-img-container,
+.events-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.offers-img,
+.events-img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.offers-book-table,
+.events-book-table {
+  display: block;
+  font-size: 20px;
+  margin-top: 50px;
+
+}
+  
+}
+
+
+/* Large devices */
+
+@media only screen and (min-width: 768px) {
+
+.event-offers-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Italianno", cursive;
   padding-bottom: 40px;
 }
@@ -8,7 +97,7 @@
 .events-container,
 .offers-container {
   border: solid rgb(255, 255, 255) 3px;
-  width: 50%;
+  width: 80%;
   margin: 20px;
   text-align: center;
   padding-bottom: 50px;
@@ -30,13 +119,18 @@
 
 .event-offer-buttons {
   height: 40px;
-  width: 200px;
+  max-width: 250px;
+  width: 30%;
   border-radius: 80px;
   background-color: inherit;
   border: solid 3px white;
   color: white;
   font-family: "Italianno", cursive;
-  font-size: 28px;
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .event-offer-buttons:hover {
@@ -76,5 +170,4 @@
   font-size: 40px;
 }
 
-
-
+}
