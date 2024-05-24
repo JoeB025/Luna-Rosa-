@@ -47,7 +47,8 @@
     font-family: "Italianno", cursive;
   }
 
-  .home-tab,
+  .offers-tab,
+  .offers-events-tab,
   .menu-tab,
   .about-tab,
   .contact-tab {
@@ -99,8 +100,8 @@
   font-family: "Italianno", cursive;
 }
 
-.home-tab:hover,
 .menu-tab:hover,
+.offers-events-tab:hover,
 .about-tab:hover,
 .contact-tab:hover {
   color: rgb(0, 0, 0);

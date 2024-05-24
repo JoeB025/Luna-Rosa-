@@ -4,6 +4,7 @@
     background-color: white;
     color: rgb(139, 0, 0);
     text-align: center;
+    border-radius: 5px;
   }
   
   .history-container {
@@ -15,6 +16,7 @@
   
   .history-heading {
     font-size: 25px;
+    line-height: 25px;
   }
   
   .origins-heading {

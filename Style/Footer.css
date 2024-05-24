@@ -49,8 +49,13 @@
     margin-bottom: -30px;
     padding-block: 5px;
   }
-  
 
+  .portfolio-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 }
 
 
@@ -116,6 +121,12 @@
 
 .history-footer:hover,
 .meet-the-team-footer:hover {
+  cursor: pointer;
+}
+
+.portfolio-link {
+  color: white;
+  text-decoration: none;
   cursor: pointer;
 }
 

@@ -21,7 +21,6 @@
     font-size: 22px;
     letter-spacing: 2px;
     padding: 0px 30px;
-    margin-bottom: -10px;
   }
   
   .book-table-header {
@@ -35,7 +34,8 @@
     width: 100px;
     height: 20px;
     padding-top: 2px;
-    margin-bottom: 40px;
+    margin-top: -2px;
+    margin-bottom: 20px;
   }
 
  
